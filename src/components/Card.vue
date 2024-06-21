@@ -6,7 +6,7 @@
   </div>
 
   <div class="card-body">
-   <slot class="cardBody" ></slot>
+   <slot name="cardBody" ></slot>
   </div>
 
 </div>
@@ -18,6 +18,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.card {
+        width: 18rem;
+    }
 </style>
