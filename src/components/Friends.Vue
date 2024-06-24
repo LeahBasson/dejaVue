@@ -13,7 +13,7 @@
       
 
       <div class="row gap-2">
-        <Card v-for="friend in friends" :key="friend.id" :class="{'male': friend.gender == 'Male', 'female': friend.gender == 'Female'}">
+        <Card v-for="friend in friends" :key="friend.id" :class="{ male: friend.gender.toLowerCase() == 'male', female: friend.gender.toLowerCase() == 'female'}">
           <template #cardHeader>
             <img
               :src="friend.profile"
@@ -86,7 +86,7 @@
   };
 </script>
   
-<style>
+<style scoped>
 .male{
   border: 2px solid gold;
 }

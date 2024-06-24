@@ -16,7 +16,7 @@
 
 <script>
 import Friends from '@/components/Friends';
-import Products from './components/Products.vue';
+import Products from './components/Products';
 
 export default {
   name: 'App',
